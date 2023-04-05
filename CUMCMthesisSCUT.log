@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.3.4)  5 APR 2023 14:52
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.3.4)  5 APR 2023 15:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -929,33 +929,33 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write4
 \openout4 = `CUMCMthesisSCUT.toc'.
 
- [2] [3] [4] [5]
+ [0] [1] [2] [3]
 Missing character: There is no ˆ ("2C6) in font cmmi12!
-[6]
+[4]
 File: ./figures/logo.jpg Graphic file (type bmp)
 <./figures/logo.jpg>
 File: ./figures/CUMCM2020.jpg Graphic file (type bmp)
 <./figures/CUMCM2020.jpg>
 
-Overfull \hbox (17.06378pt too wide) in paragraph at lines 379--380
+Overfull \hbox (17.06378pt too wide) in paragraph at lines 381--382
 [][] 
  []
 
 File: ./figures/MCM2021.jpg Graphic file (type bmp)
 <./figures/MCM2021.jpg>
 
-Overfull \hbox (36.41841pt too wide) in paragraph at lines 385--386
+Overfull \hbox (36.41841pt too wide) in paragraph at lines 387--388
 [][] 
  []
 
 File: ./figures/MCM2020.jpg Graphic file (type bmp)
 <./figures/MCM2020.jpg>
-[7] [8]
+[5] [6]
 File: ./figures/OrigFig.eps Graphic file (type eps)
 <./figures/OrigFig.eps>
 File: ./figures/BiuFig.eps Graphic file (type eps)
 <./figures/BiuFig.eps>
- [9] (d:/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+ [7] (d:/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 
@@ -3089,13 +3089,12 @@ File: ./AnimationDemo/AnimationDemo-0669.jpg Graphic file (type bmp)
  <a0,fr669>
 File: ./AnimationDemo/AnimationDemo-0670.jpg Graphic file (type bmp)
 <./AnimationDemo/AnimationDemo-0670.jpg>
- <a0,fr670> [10] [11] [12]
-(./CUMCMthesisSCUT.bbl) [13]
+ <a0,fr670> [8] [9] [10] (./CUMCMthesisSCUT.bbl) [11]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 556.
- (./code/getTs.m [14
+nput line 558.
+ (./code/getTs.m [12
 
-]) [15] (./CUMCMthesisSCUT.aux)
+]) [13] (./CUMCMthesisSCUT.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3105,7 +3104,7 @@ Package rerunfilecheck Info: File `CUMCMthesisSCUT.out' has not changed.
 Here is how much of TeX's memory you used:
  36569 strings out of 476179
  1009565 string characters out of 5813073
- 1343983 words of memory out of 5000000
+ 1344014 words of memory out of 5000000
  56257 multiletter control sequences out of 15000+600000
  476250 words of font info for 92 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
