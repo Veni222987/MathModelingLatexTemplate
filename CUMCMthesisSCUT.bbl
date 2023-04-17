@@ -1,4 +1,4 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{1}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \expandafter\ifx\csname urlstyle\endcsname\relax\relax\else
@@ -6,19 +6,12 @@
 \providecommand{\href}[2]{\url{#2}}
 \providecommand{\doi}[1]{\href{https://doi.org/#1}{#1}}
 
-\bibitem[{Liu et~al.(2019)Liu, Zhan, Gao, Zhang, Kwong, and
-  Zhang}]{詹志辉CoevolutionaryParticleSwarmOptimizationWithBottleneckObjectiveLearningStrategyforMany-ObjectiveOptimization}
+\bibitem[{Liu et~al.(2019)Liu, Zhan, Gao, Zhang, Kwong, and Zhang}]{Sample}
 LIU~X~F, ZHAN~Z~H, GAO~Y, et~al.
 \newblock Coevolutionary particle swarm optimization with bottleneck objective
   learning strategy for many-objective optimization\allowbreak[J/OL].
 \newblock IEEE Transactions on Evolutionary Computation, 2019, 23\penalty0
   (4):\penalty0 587-602.
 \newblock DOI: \doi{10.1109/TEVC.2018.2875430}.
-
-\bibitem[{冯茜(2022)}]{冯茜基于改进粒子群算法的多目标优化及其应用}
-冯茜.
-\newblock
-  基于改进粒子群算法的多目标优化及其应用\allowbreak[D].
-\newblock 北京科技大学, 2022.
 
 \end{thebibliography}

@@ -1,0 +1,13 @@
+#忽略code里面的LF文件夹
+/code/LF
+
+#忽略tex生成文件
+*.aux
+*.log
+*.out
+*.toc
+*.bbl
+*.blg
+*.bak
+*.synctex.gz
+*.ini

@@ -51,12 +51,11 @@
 \usepackage{listings}
 %国标引用，修改开源项目，修正学位论文中出现出版社不详的问题
 \usepackage{gbt7714}
-
+\usepackage{longtable}
 %修改目录
 \usepackage{tocloft}
 
-
-
+\graphicspath{{figures/}}
 
 \lstset{
   frame=tb,
@@ -92,7 +91,7 @@
 \end{center}
 
 
-\textbf{基于全国大学生数学建模竞赛论文要求，旨在让华南理工大学参赛同学专注于论文的内容写作而不用浪费时间在论文的格式定制和调整上，数模团队特编写此 \LaTeX 模板，若有任意疑问和建议，请联系曾老师 macbzeng@scut.edu.cn。\color{blue}{Veni修改内容：修正原模板中的dkgreen颜色报错；修正原模板中插入代码的时候单行代码过长而无法显示；改变附录代码插入格式，改为lstinputlisting，直接输入文件名，不必再CV；改变文献引用格式，采用gbt7714-2015格式，同时修正了开源模板中的学位论文出现[出版社不详]的问题；修正目录与ref的颜色冲突。应该没有bug了吧。}}
+Veni修改内容：修正原模板中的dkgreen颜色报错；修正原模板中插入代码的时候单行代码过长而无法显示；改变附录代码插入格式，改为lstinputlisting，直接输入文件名，不必再CV；改变文献引用格式，采用gbt7714-2015格式，同时修正了开源模板中的学位论文出现[出版社不详]的问题；修正目录与ref的颜色冲突。Longtable使用，简化模板，减少include，不传大量图片，.gitignore忽略部分生成文件。
 
 基于XXX问题背景，本文建立XXX和XXX模型，研究XXX的机理/讨论XXX对XXX的影响关系/探索XXX，采用XXX方法(理论和数值)求解XXX模型，提出XXX指标/制定XXX策略，正面回答XXX问题/提出XXX建议。
 
@@ -103,6 +102,8 @@
 针对问题 3：首先根据XXX条件，点明重点理想化假设，建立XXX模型；其次采用XXX求解方法，点明求解思路和算法实现的亮点；列出主要结果。（模型、方法、亮点、主要结果黑体突出，除图表可以采用彩色，文字不要用）
 
 最后，评价模型和结果的合理性，再吹吹牛皮谈谈展望和潜在应用价值，若正文不满20页可添加灵敏性分析、模型的优劣性分析等。
+
+
 
 
 \vspace{2ex}
@@ -128,7 +129,7 @@
 绝对不可照抄原题，不然过不了查重或加大重复率！
 
 \subsection{问题背景}
-   一般是对题目的前几段话的重述，可以变换文字的前后顺序、语句的语态，特别是务必添加1-3篇参考文献及其切题的描述 。
+   一般是对题目的前几段话的重述，可以变换文字的前后顺序、语句的语态，特别是务必添加1-3篇参考文献\cite{Sample}及其切题的描述 。
 \subsection{问题重述}
    一般针对所提的3-4个问题逐一重述，主要点明：根据什么条件（一般条件和特定条件）、构建什么模型、解决什么问题。
 
@@ -368,89 +369,44 @@ Tips: 数学符号可以参考 M. Heinkenschloss 教授收集，兼顾变量本�
 
 
 
-\begin{figure}[htb]
-\centering
-\includegraphics[width=1\linewidth]{./figures/logo}
-\caption{华南理工大学校徽、校名与数学数学院徽}
-\label{fig:logo}
-\end{figure}
+%\begin{figure}[htb]
+%\centering
+%\includegraphics[width=1\linewidth]{./figures/logo}
+%\caption{华南理工大学校徽、校名与数学数学院徽}
+%\label{fig:logo}
+%\end{figure}
+%
+%\begin{figure}[H]
+%\centering
+%\begin{subfigure}{0.4\textwidth}
+%    \includegraphics[width=\textwidth,angle=90]{./figures/CUMCM2020}
+%    \caption{2020 国赛国家一等奖}
+%    \label{fig:first}
+%\end{subfigure}
+%\hfill
+%\begin{subfigure}{0.4\textwidth}
+%    \includegraphics[width=1.2\textwidth]{./figures/MCM2021}
+%    \caption{2021 美赛O奖}
+%    \label{fig:second}
+%\end{subfigure}
+%\hfill
+%\begin{subfigure}{0.9\textwidth}
+%    \includegraphics[width=\textwidth]{./figures/MCM2020}
+%    \caption{2020 美赛O奖}
+%    \label{fig:third}
+%\end{subfigure}
+%        
+%\caption{华工近两年的部分数模奖项展示}
+%\label{fig:figures}
+%
+%\end{figure}
 
-\begin{figure}[H]
-\centering
-\begin{subfigure}{0.4\textwidth}
-    \includegraphics[width=\textwidth,angle=90]{./figures/CUMCM2020}
-    \caption{2020 国赛国家一等奖}
-    \label{fig:first}
-\end{subfigure}
-\hfill
-\begin{subfigure}{0.4\textwidth}
-    \includegraphics[width=1.2\textwidth]{./figures/MCM2021}
-    \caption{2021 美赛O奖}
-    \label{fig:second}
-\end{subfigure}
-\hfill
-\begin{subfigure}{0.9\textwidth}
-    \includegraphics[width=\textwidth]{./figures/MCM2020}
-    \caption{2020 美赛O奖}
-    \label{fig:third}
-\end{subfigure}
-        
-\caption{华工近两年的部分数模奖项展示}
-\label{fig:figures}
-
-\end{figure}
 
 
-图表可以交互引用，但是标签(label)务必放在标题(caption)之后才能正确引用，上面提供了三线表的制作，例如表 \ref{tab1}、表 \ref{tab2}、表 \ref{tab3}；对于图形，如果是单个图形，居中放置即可，如图 \ref{fig:logo}，若多个子图可根据数量进行布局，可给每个子图单独赋予子标题，如图 \ref{fig:second} 所示，同时整体有个大标题，如图 \ref{fig:figures} 所示。
-
-图像主要作用是为了直观明确地表现所得结果，可以是软件包括 MatLab、Python、C 等高级语言软件，各有千秋，故选用何种语言取决于同学们的熟练程度，掌握其一即可，推荐使用 MatLab 语言。
-
-首先，在官网注册地址：
-\href{https://ww2.mathworks.cn/mwaccount/register}{https://ww2.mathworks.cn/mwaccount/register} 采用常用邮箱注册并验证；其次，关联许可证：
-     \begin{enumerate}
-     \item 许可证号: 41049590,    
-     激活密钥: 18066-68130-27388-35312-64164
-     \item 许可证号: 41043477,    
-          激活密钥: 87700-62644-49623-04064-28497
-     \end{enumerate}   
-然后下载matalb2022a版本并安装，约耗时20分钟。
 
 关于图形美化，推荐使用 PlotPub 工具箱，下载地址为\href{https://www.mathworks.com/matlabcentral/fileexchange/47921-plotpub-publication-quality-graphs-in-matlab}{MatLab File Exchange} 或 \href{https://github.com/masumhabib/PlotPub}{GitHub}，注意 MatLab File Exchange 包含许多MatLab开源代码，下载时需使用刚才注册的账号。下载后，解压到命名为PlotPub的文件夹，然后打开MatLab软件$ \rightarrow $ 设置路径$ \rightarrow $ 添加并包含子文件夹$ \rightarrow $选定文件夹PlotPub $\rightarrow $保存。
 
 
-\begin{figure}[hb]
-\centering
-\includegraphics[width=0.85\linewidth]{./figures/OrigFig}
-\includegraphics[width=0.85\linewidth]{./figures/BiuFig}
-\caption{炉温曲线美化前后对比}
-\label{fig:origfig}
-\end{figure}
-
-在图 \ref{fig:origfig} 中，只需在运行原图的 MatLab 代码的画图部分增添一句命令 Plot(~)，注意此为大写的 P，坐标轴字体改成华文楷体即可。
-
-另外，保存图形结果的方法：文件 $ \rightarrow $ 另存为 $ \rightarrow $ 保存类型旋转 eps 格式，不要保存为 png、jpg、bmp、tiff等格式（容易失真，且有时会超出页面），也不要保存为 pdf 格式（需要手动删除空白或设置保存选项，且有时会超出页面）。
-
-为了结果的丰富性，任何动态变化的曲线都可以制作为动画，以炉温曲线为例，已经计算到时间分量 $t$ 和 温度分量 $u$，且坐标轴的范围为 $x\in[0, 350]$，$y\in[0, 250]$，对应代码如下：
-
-\begin{lstlisting}[language=matlab]
-figure;
-h = plot(t(1),u(1),'-m','LineWidth',2);
-set(gcf,'Position',[100 100 600 300])
-set(gca,'TickLength',[0.02 0.02],'XColor',[0 0 0],'XMinorTick','on',...
-    'YColor',[0 0 0],'YMinorTick','on','ZColor',[0 0 0],'ZMinorTick','on');
-xlabel('时间 (s)','FontSize',12,'FontName','华文楷体');
-ylabel('温度(℃)','FontSize',12,'FontName','华文楷体');
-xlim([0 350]);  ylim([0 250])
-Y1 = t(:); Y2 = u(:);
-for m = 2:numel(Y1)
-    set(h,'xData',Y1(1:m),'yData',Y2(1:m));
-    drawnow;
-end
-\end{lstlisting}
-
-\begin{center}
-\animategraphics[width=.9\linewidth, autoplay, loop, 					controls]{24}{./AnimationDemo/AnimationDemo-}{0000}{0670}
-\end{center}
 
 关于制图，分享若干相关软件：
 
@@ -506,9 +462,6 @@ end
 
 \subsection{模型的推广}
  针对上述缺点，提出完善简化处理、添加丢弃条件的可能性；模型和结果应用到解决实际问题的可行性。
- \cite{詹志辉CoevolutionaryParticleSwarmOptimizationWithBottleneckObjectiveLearningStrategyforMany-ObjectiveOptimization}
- \cite{冯茜基于改进粒子群算法的多目标优化及其应用}
- 
  
 % chap 8
 \newpage
@@ -554,8 +507,8 @@ Tips：参考文献必不可少，同时要注明正文具体引用位置，最�
 \section{源程序}
  
 \begin{enumerate}
-\item getTs.m
-\lstinputlisting[language=matlab]{code/getTs.m}
+\item sample.m
+\lstinputlisting[language=matlab]{code/sample.m}
 \item 源程序balabala
 \end{enumerate}
 
