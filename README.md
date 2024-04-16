@@ -1,5 +1,5 @@
 # MathModelingProjects
-200 $\pi$ 专属数模论文模板
+SCUT数模论文模板plus
 
 - 修正原模板中的dkgreen颜色报错
 - 修正原模板中插入代码的时候单行代码过长而无法显示
